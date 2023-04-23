@@ -5,7 +5,7 @@ AECO options are Asian style options whose underlying are natural gas futures pr
 
 The expected average rate in the Foreign Exchange Model is the average of the rates projected for the observation period.  The expected average rate in the Commodity Model is the rate for the underlying futures contract.  This model is not intended for cases where the observation period spans more than one futures contract.
 
-The Asian volatility in the Foreign Exchange Model is determined from a forward volatility curve.  In the case of the Commodity Model, the volatility is the volatility of the underlying futures contract. Sometimes, an AECO option may have a callable feature (see https://finpricing.com/lib/EqCallable.html)
+The Asian volatility in the Foreign Exchange Model is determined from a forward volatility curve.  In the case of the Commodity Model, the volatility is the volatility of the underlying futures contract. Sometimes, an AECO option may have a callable feature.
 
 Let   be a price process of a natural gas futures contract.  Let   be a set of average dates and   be a payoff settlement date.  The price of the underlying is recorded on the set of average dates to obtain the price arithmetic average of A, where
 
@@ -54,3 +54,8 @@ where   is the option price corresponding to an upper 1% shift of stock price vo
 	 
 
 where   is the option value assuming one-day shift of value time while all else remains the same.  When   is calculated, if “AverageSoFar” is applicable, this value is applied from the beginning date of the month to the value date, and the spot price is used as the price for the next date. 
+
+Reference:
+
+https://finpricing.com/product.html
+
